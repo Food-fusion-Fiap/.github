@@ -110,6 +110,10 @@ Certifique-se de configurar corretamente as variáveis de ambiente e arquivos de
 Este projeto está aberto para contribuições. Caso queira contribuir, por favor, faça um fork do repositório, implemente as alterações e envie um pull request.
 -->
 
+## Reports de vulnerabilidades
+
+![Antes](docs/reports vulnerabilidades/pedido.png)
+
 ## Licença
 
 Este projeto está licenciado sob a [Licença MIT](LICENSE).
