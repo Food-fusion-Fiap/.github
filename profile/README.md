@@ -2,10 +2,12 @@
 
 Este repositório FoodFusion é destinado ao projeto de Fast Food da FIAP, criado como parte de um desafio técnico.
 
-   ## Objetivo do Projeto
+## Objetivo do Projeto
+
 O projeto de Fast Food da FIAP tem como objetivo criar um sistema de autoatendimento para uma lanchonete, visando melhorar a eficiência no atendimento aos clientes e garantir a precisão na preparação dos pedidos.
 
 ## Requisitos do Sistema
+
 Para rodar a aplicação, é necessário ter as seguintes ferramentas instaladas:
 
 - Docker
@@ -16,31 +18,31 @@ Para rodar a aplicação, é necessário ter as seguintes ferramentas instaladas
 
 1. **Configuração do Ambiente:**
 
-      Certifique-se de ter o Docker e o Kubernetes configurados corretamente na sua máquina.
-      
+   Certifique-se de ter o Docker e o Kubernetes configurados corretamente na sua máquina.
+
 2. **Build da Imagem Docker:**
-      
-      Execute o seguinte comando para construir a imagem Docker da aplicação:
-      
-      ```bash
-      docker build . -t tech-challenge-go -f Dockerfile
-      ```
+
+   Execute o seguinte comando para construir a imagem Docker da aplicação:
+
+   ```bash
+   docker build . -t tech-challenge-go -f Dockerfile
+   ```
 
 3. **Deploy com Kubernetes:**
 
-      Aplique os recursos do Kubernetes utilizando o seguinte comando:
+   Aplique os recursos do Kubernetes utilizando o seguinte comando:
 
-      ```bash
-      kubectl apply -f infra/
-      ```
-      
+   ```bash
+   kubectl apply -f infra/
+   ```
+
 4. **Verificação do Status dos Pods:**
 
-      Aguarde até que todos os pods estejam rodando com o comando:
+   Aguarde até que todos os pods estejam rodando com o comando:
 
-      ```bash
-      kubectl get pods --watch
-      ```
+   ```bash
+   kubectl get pods --watch
+   ```
 
 5. **Pronto.**
 
@@ -61,9 +63,11 @@ k6 run --duration 1m tests/stress.js
 ```
 
 ## Documentação da API
+
 Ao importar a documentação presente em `docs/tech-challenge.json` de cada repositório, no Postman, terão valores de exemplos editáveis.
 
 ## Documentação do problema
+
 Para visualizar e editar o storytelling da aplicação, acesse [Egon.io](https://egon.io/app-v1/) e importe os arquivos `.dst` localizados em `docs/domain_storytelling`.
 
 #### Relatório RIPD do sistema
@@ -71,16 +75,19 @@ Para visualizar e editar o storytelling da aplicação, acesse [Egon.io](https:/
 É possível acessar o relatório RIPD atrávés do [link](docs/RIPD.docx).
 
 #### Arquitetura em Kubernetes
+
 ![Arquitetura em Kubernetes](docs/architecture/architecture.png)
 
-Esta imagem representa a arquitetura em Kubernetes. Oferece uma visão abrangente de como os diferentes componentes e serviços estão organizados e interagem dentro do ambiente Kubernetes no projeto. Para uma compreensão mais completa e dinâmica, disponibilizamos um vídeo demonstrativo que mostra a arquitetura em ação. Este é um cluster local que roda em Docker Desktop (em ambiente Windows) ou Minikube (em ambiente Linux). [Assista ao vídeo](https://youtu.be/QDqb9ZvWR2U) para uma exploração mais detalhada. 
+Esta imagem representa a arquitetura em Kubernetes. Oferece uma visão abrangente de como os diferentes componentes e serviços estão organizados e interagem dentro do ambiente Kubernetes no projeto. Para uma compreensão mais completa e dinâmica, disponibilizamos um vídeo demonstrativo que mostra a arquitetura em ação. Este é um cluster local que roda em Docker Desktop (em ambiente Windows) ou Minikube (em ambiente Linux). [Assista ao vídeo](https://youtu.be/QDqb9ZvWR2U) para uma exploração mais detalhada.
 
 #### Pedido do Cliente
+
 ![Pedido do Cliente](docs/domain_storytelling/pedido.png)
 
 Esta imagem representa o processo de pedido do cliente usando o sistema de autoatendimento de fast food. Os clientes podem selecionar seus itens preferidos e personalizar seus pedidos de acordo com suas preferências.
 
 #### Preparo e Entrega
+
 ![Preparo e Entrega](docs/domain_storytelling/entrega.png)
 
 Esta imagem representa o processo de preparo e entrega dos pedidos na cozinha da lanchonete. O sistema de autoatendimento de fast food transmite os pedidos automaticamente para a cozinha, após pagamento, onde são preparados e entregues aos clientes de forma eficiente e organizada.
@@ -112,7 +119,11 @@ Este projeto está aberto para contribuições. Caso queira contribuir, por favo
 
 ## Reports de vulnerabilidades
 
-![Antes](docs/reports vulnerabilidades/pedido.png)
+[Antes de executa o ZAP](docs/reports_vulnerabilidades/antes/2024-09-09-ZAP-Report.html)
+
+[Depois de executa o ZAP](docs/reports_vulnerabilidades/depois/2024-09-09-ZAP-Report.html)
+
+Nesses relatórios constam todos os registros de tentativas nos endpoints e também vulnerabilidades encontradas e quais foram tratadas
 
 ## Licença
 
@@ -122,7 +133,6 @@ Este projeto está licenciado sob a [Licença MIT](LICENSE).
 
 - [Documentação do Kubernetes](https://kubernetes.io/docs/)
 - [Documentação do K6](https://k6.io/docs/)
-
 
 <!--
 
