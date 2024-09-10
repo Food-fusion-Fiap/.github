@@ -1,0 +1,1270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Endpoints</title>
+<link
+	href="2024-09-09-ZAP-Report-/normalize/normalize.css" rel="stylesheet">
+<link
+	href="2024-09-09-ZAP-Report-/themes/original/main.css" rel="stylesheet">
+<link
+	href="2024-09-09-ZAP-Report-/themes/original/colors.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1>Endpoints</h1>
+		<p>
+			<span>Generated with</span> <a href="https://zaproxy.org"><img
+				src="2024-09-09-ZAP-Report-/zap32x32.png" alt="The ZAP logo" class="zap-logo">ZAP</a>
+			<span>on seg. 9 set. 2024, at 20:04:17</span>
+		</p>
+		<p>ZAP Version: 2.15.0</p>
+		<p>
+			ZAP is supported by the <a href="https://crashoverride.com/?zap=rep">Crash Override Open Source Fellowship</a>
+		</p>
+	</header>
+
+	<main>
+
+		<section id="contents" class="contents">
+			<h2>Contents</h2>
+			<nav>
+				<ol>
+					<li><a
+						href="#about-this-report">About this report</a>
+						<ol>
+							
+							<li><a
+								href="#report-parameters">Report parameters</a></li>
+						</ol></li>
+					<data-th-block>
+					<li><a
+						href="#summaries">Summaries</a>
+						<ol>
+							<li><a
+								href="#risk-confidence-counts">Alert counts by risk and confidence</a></li>
+							<li><a
+								href="#site-risk-counts">Alert counts by site and risk</a></li>
+							<li><a
+								href="#alert-type-counts">Alert counts by alert type</a></li>
+						</ol></li>
+					<li><a
+						href="#alerts">Alerts</a>
+						<ol>
+							
+							
+							
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-3-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Alto</span>, <span>Confidence</span>=<span
+									class="confidence-level">Médio</span> <span>(2)</span></a></li>
+							
+							
+							  
+							 
+							
+							
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-1-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Baixo</span>, <span>Confidence</span>=<span
+									class="confidence-level">Médio</span> <span>(2)</span></a></li>
+							
+							
+							  
+							
+							
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-0-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Informativo</span>, <span>Confidence</span>=<span
+									class="confidence-level">Médio</span> <span>(1)</span></a></li>
+							
+							
+							  
+						</ol></li>
+					<li><a
+						href="#appendix">Appendix</a>
+						<ol>
+							<li><a
+								href="#alert-types">Alert types</a></li>
+						</ol></li>
+					</data-th-block>
+				</ol>
+			</nav>
+		</section>
+
+		<section
+			id="about-this-report" class="about-this-report">
+			<h2>About this report</h2>
+
+			
+
+			<section
+				id="report-parameters">
+				<h3>Report parameters</h3>
+				<div class="report-parameters--container">
+					<h4>Contexts</h4>
+					
+					
+					<p>No contexts were selected, so all contexts were included by default.</p>
+					  
+
+					<h4>Sites</h4>
+					
+					<p>The following sites were included:</p>
+					<ul class="sites-list">
+						<li><span class="site">http://a6bf5a7ad64484b2ba34ef92ec7a3fe8-1438104276.us-east-1.elb.amazonaws.com</span></li>
+						<li><span class="site">http://a6945c02e6bf44ba0b2f32721ea971bb-1914662718.us-east-1.elb.amazonaws.com</span></li>
+						<li><span class="site">http://a458e5c9044e04963b60ed9128ce81b4-1515135965.us-east-1.elb.amazonaws.com</span></li>
+					</ul>
+					
+					<p>(If no sites were selected, all sites were included by default.)</p>
+					<p>An included site must also be within one of the included contexts for its data to be included in the report.</p>
+
+					<h4>Risk levels</h4>
+					<p>
+						<span>Included</span>:
+						 
+						<span class="included-risk-codes"><span class="risk-level">Alto</span>, <span class="risk-level">Médio</span>, <span class="risk-level">Baixo</span>, <span class="risk-level">Informativo</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						 <span>None</span>
+						
+					</p>
+
+					<h4>Confidence levels</h4>
+					<p>
+						<span>Included</span>:
+						
+						
+						<span class="included-confidence-codes"><span class="confidence-level">User Confirmed</span>, <span class="confidence-level">Alto</span>, <span class="confidence-level">Médio</span>, <span class="confidence-level">Baixo</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						
+						
+						<span class="included-confidence-codes"> <span class="confidence-level">User Confirmed</span>, <span class="confidence-level">Alto</span>, <span class="confidence-level">Médio</span>, <span class="confidence-level">Baixo</span>, <span class="confidence-level">Falso Positivo</span></span>
+					</p>
+				</div>
+			</section>
+		</section>
+
+		
+		<section>
+			
+		</section>
+		
+		<section id="summaries" class="summaries">
+			<h2>Summaries</h2>
+
+			<section
+				id="risk-confidence-counts">
+				<h3>Alert counts by risk and confidence</h3>
+				<table class="risk-confidence-counts-table">
+					<caption>
+						<p>This table shows the number of alerts for each level of risk and confidence included in the report.</p>
+						<p>(The percentages in brackets represent the count as a percentage of the total number of alerts included in the report, rounded to one decimal place.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 14.0%"><col
+							style="width: 14.0%"><col
+							style="width: 14.0%"><col
+							style="width: 14.0%">
+						<col style="width: 14.0%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup"
+								colspan="5">Confidence</th>
+						</tr>
+						<tr>
+							<th scope="col">User Confirmed</th>
+							<th scope="col">Alto</th>
+							<th scope="col">Médio</th>
+							<th scope="col">Baixo</th>
+							<th scope="col">Total</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="5">Risk</th>
+							<th scope="row">Alto</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0%)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(40,0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0%)</span></td>
+							<td><span>2</span><br> <span class="additional-info-percentages">(40,0%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Médio</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0%)</span></td>
+							<td><span>0</span><br> <span class="additional-info-percentages">(0,0%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Baixo</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0%)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(40,0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0%)</span></td>
+							<td><span>2</span><br> <span class="additional-info-percentages">(40,0%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Informativo</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(20,0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0%)</span></td>
+							<td><span>1</span><br> <span class="additional-info-percentages">(20,0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row">Total</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0%)</span></td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(100,0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0%)</span></td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(100%)</span></td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="site-risk-counts">
+				<h3>Alert counts by site and risk</h3>
+				<table class="site-risk-counts-table">
+					<caption>
+						<p>This table shows, for each site for which one or more alerts were raised, the number of alerts raised at each risk level.</p>
+						<p>Alerts with a confidence level of &quot;False Positive&quot; have been excluded from these counts.</p>
+						<p>(The numbers in brackets are the number of alerts raised for the site at or above that risk level.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 16.25%"><col
+							style="width: 16.25%"><col
+							style="width: 16.25%"><col
+							style="width: 16.25%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup" colspan="4">Risk</th>
+						</tr>
+						<tr>
+							<th scope="col">
+								<span>Alto</span><br>  <span
+									class="additional-info-percentages">(= Alto)</span>  
+							</th>
+							<th scope="col">
+								<span>Médio</span><br>   <span
+									class="additional-info-percentages">(&gt;= Médio)</span> 
+							</th>
+							<th scope="col">
+								<span>Baixo</span><br>   <span
+									class="additional-info-percentages">(&gt;= Baixo)</span> 
+							</th>
+							<th scope="col">
+								<span>Informativo</span><br>   <span
+									class="additional-info-percentages">(&gt;= Informativo)</span> 
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="2">Site</th>
+							<th scope="row">http://a6945c02e6bf44ba0b2f32721ea971bb-1914662718.us-east-1.elb.amazonaws.com</th>
+							
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(2)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(2)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(2)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(3)</span></td>
+							
+						</tr>
+						<tr>
+							
+							<th scope="row">http://a458e5c9044e04963b60ed9128ce81b4-1515135965.us-east-1.elb.amazonaws.com</th>
+							
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(2)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(2)</span></td>
+							
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="alert-type-counts">
+				<h3>Alert counts by alert type</h3>
+				<table class="alert-type-counts-table">
+					<caption>
+						<p>This table shows the number of alerts of each alert type, together with the alert type&#39;s risk level.</p>
+						<p>(The percentages in brackets represent each count as a percentage, rounded to one decimal place, of the total number of alerts included in this report.)</p>
+					</caption>
+					<thead>
+						<tr>
+							<th scope="col">Alert type</th>
+							<th scope="col">Risk</th>
+							<th scope="col">Count</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-0">Injeção SQL</a></th>
+							<td class="risk-level">Alto</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(20,0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-1">Injeção SQL - SQLite</a></th>
+							<td class="risk-level">Alto</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(20,0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-2">Application Error Disclosure</a></th>
+							<td class="risk-level">Baixo</td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(40,0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-3">X-Content-Type-Options Header Missing</a></th>
+							<td class="risk-level">Baixo</td>
+							<td><span>7</span><br> <span
+								class="additional-info-percentages">(140,0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-4">User Agent Fuzzer</a></th>
+							<td class="risk-level">Informativo</td>
+							<td><span>24</span><br> <span
+								class="additional-info-percentages">(480,0%)</span></td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<th scope="row">Total</th>
+							<td></td>
+							<td>5</td>
+						</tr>
+					</tfoot>
+				</table>
+			</section>
+		</section>
+
+		<section id="alerts" class="alerts">
+			<h2>Alerts</h2>
+			<ol>
+				
+				 
+				
+				
+				
+				
+				<li id="alerts--risk-3-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Alto</span>, <span>Confidence</span>=<span
+							class="confidence-level">Médio</span> <span>(2)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://a6945c02e6bf44ba0b2f32721ea971bb-1914662718.us-east-1.elb.amazonaws.com</span> <span>(2)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-0">Injeção SQL</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://a6945c02e6bf44ba0b2f32721ea971bb-1914662718.us-east-1.elb.amazonaws.com/products?categoryId=1+AND+1%3D1+--+</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A03_2021-Injection/">OWASP_2021_A03</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/89.html">CWE-89</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/07-Input_Validation_Testing/05-Testing_for_SQL_Injection">WSTG-v42-INPV-05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A1_2017-Injection.html">OWASP_2017_A01</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>SQL injection may be possible.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>The page results were successfully manipulated using the boolean conditions [1 AND 1=1 -- ] and [1 AND 1=2 -- ]</p>
+
+<p>The parameter value being modified was NOT stripped from the HTML output for the purposes of the comparison</p>
+
+<p>Os dados foram retornados para o parâmetro original.</p>
+
+<p>A vulnerabilidade foi detectada ao restringir com sucesso os dados originalmente retornados, manipulando o parâmetro</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (347 bytes)</summary>
+				
+				<pre><code>GET http://a6945c02e6bf44ba0b2f32721ea971bb-1914662718.us-east-1.elb.amazonaws.com/products?categoryId=1+AND+1%3D1+--+ HTTP/1.1
+host: a6945c02e6bf44ba0b2f32721ea971bb-1914662718.us-east-1.elb.amazonaws.com
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (126 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+Date: Mon, 09 Sep 2024 22:58:09 GMT
+content-length: 10319
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (10319 bytes)</summary>
+				
+				<pre><code>[{&quot;id&quot;:1,&quot;name&quot;:&quot;Água&quot;,&quot;price&quot;:2.5,&quot;description&quot;:&quot;Água Mineral 500ml&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 02:47:15&quot;},{&quot;id&quot;:2,&quot;name&quot;:&quot;Água2&quot;,&quot;price&quot;:2.5,&quot;description&quot;:&quot;Água Mineral 500ml&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 02:47:19&quot;},{&quot;id&quot;:3,&quot;name&quot;:&quot;Água3&quot;,&quot;price&quot;:2.5,&quot;description&quot;:&quot;Água Mineral 500ml&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 02:47:22&quot;},{&quot;id&quot;:4,&quot;name&quot;:&quot;Água4&quot;,&quot;price&quot;:2.5,&quot;description&quot;:&quot;Água Mineral 500ml&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 02:47:25&quot;},{&quot;id&quot;:5,&quot;name&quot;:&quot;Água5&quot;,&quot;price&quot;:2.5,&quot;description&quot;:&quot;Água Mineral 500ml&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 02:47:28&quot;},{&quot;id&quot;:6,&quot;name&quot;:&quot;Água6&quot;,&quot;price&quot;:2.5,&quot;description&quot;:&quot;Água Mineral 500ml&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 02:47:32&quot;},{&quot;id&quot;:7,&quot;name&quot;:&quot;xburguer&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:54:07&quot;},{&quot;id&quot;:9,&quot;name&quot;:&quot;c:/Windows/system.ini&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:56:28&quot;},{&quot;id&quot;:10,&quot;name&quot;:&quot;../../../../../../../../../../../../../../../../Windows/system.ini&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:56:28&quot;},{&quot;id&quot;:11,&quot;name&quot;:&quot;c:\\Windows\\system.ini&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:56:28&quot;},{&quot;id&quot;:12,&quot;name&quot;:&quot;..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\Windows\\system.ini&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:56:28&quot;},{&quot;id&quot;:13,&quot;name&quot;:&quot;/etc/passwd&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:56:29&quot;},{&quot;id&quot;:14,&quot;name&quot;:&quot;../../../../../../../../../../../../../../../../etc/passwd&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:56:29&quot;},{&quot;id&quot;:15,&quot;name&quot;:&quot;/&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:56:30&quot;},{&quot;id&quot;:16,&quot;name&quot;:&quot;../../../../../../../../../../../../../../../../&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:56:30&quot;},{&quot;id&quot;:17,&quot;name&quot;:&quot;c:/&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:56:31&quot;},{&quot;id&quot;:18,&quot;name&quot;:&quot;c:\\&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:56:32&quot;},{&quot;id&quot;:19,&quot;name&quot;:&quot;WEB-INF/web.xml&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:56:33&quot;},{&quot;id&quot;:20,&quot;name&quot;:&quot;WEB-INF\\web.xml&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:56:33&quot;},{&quot;id&quot;:21,&quot;name&quot;:&quot;/WEB-INF/web.xml&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:56:33&quot;},{&quot;id&quot;:22,&quot;name&quot;:&quot;\\WEB-INF\\web.xml&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:56:35&quot;},{&quot;id&quot;:23,&quot;name&quot;:&quot;thishouldnotexistandhopefullyitwillnot&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:56:35&quot;},{&quot;id&quot;:24,&quot;name&quot;:&quot;products&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:56:35&quot;},{&quot;id&quot;:25,&quot;name&quot;:&quot;/products&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:56:36&quot;},{&quot;id&quot;:26,&quot;name&quot;:&quot;\\products&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:56:36&quot;},{&quot;id&quot;:45,&quot;name&quot;:&quot;http://www.google.com/&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:00&quot;},{&quot;id&quot;:46,&quot;name&quot;:&quot;http://www.google.com:80/&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:01&quot;},{&quot;id&quot;:47,&quot;name&quot;:&quot;http://www.google.com&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:01&quot;},{&quot;id&quot;:48,&quot;name&quot;:&quot;http://www.google.com/search?q=ZAP&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:02&quot;},{&quot;id&quot;:49,&quot;name&quot;:&quot;http://www.google.com:80/search?q=ZAP&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:02&quot;},{&quot;id&quot;:50,&quot;name&quot;:&quot;www.google.com/&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:02&quot;},{&quot;id&quot;:51,&quot;name&quot;:&quot;www.google.com:80/&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:02&quot;},{&quot;id&quot;:52,&quot;name&quot;:&quot;www.google.com&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:03&quot;},{&quot;id&quot;:53,&quot;name&quot;:&quot;www.google.com/search?q=ZAP&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:03&quot;},{&quot;id&quot;:54,&quot;name&quot;:&quot;www.google.com:80/search?q=ZAP&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:03&quot;},{&quot;id&quot;:65,&quot;name&quot;:&quot;3505551547495921286.owasp.org&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:23&quot;},{&quot;id&quot;:66,&quot;name&quot;:&quot;http://3505551547495921286.owasp.org&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:23&quot;},{&quot;id&quot;:67,&quot;name&quot;:&quot;https://3505551547495921286.owasp.org&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:23&quot;},{&quot;id&quot;:68,&quot;name&quot;:&quot;https://3505551547495921286%2eowasp%2eorg&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:24&quot;},{&quot;id&quot;:69,&quot;name&quot;:&quot;5;URL=&#39;https://3505551547495921286.owasp.org&#39;&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:24&quot;},{&quot;id&quot;:70,&quot;name&quot;:&quot;URL=&#39;http://3505551547495921286.owasp.org&#39;&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:24&quot;},{&quot;id&quot;:71,&quot;name&quot;:&quot;http://\\3505551547495921286.owasp.org&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:24&quot;},{&quot;id&quot;:72,&quot;name&quot;:&quot;https://\\3505551547495921286.owasp.org&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:24&quot;},{&quot;id&quot;:73,&quot;name&quot;:&quot;//3505551547495921286.owasp.org&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:25&quot;},{&quot;id&quot;:83,&quot;name&quot;:&quot;\u003c!--#EXEC cmd=\&quot;ls /\&quot;--\u003e&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:37&quot;},{&quot;id&quot;:84,&quot;name&quot;:&quot;\&quot;\u003e\u003c!--#EXEC cmd=\&quot;ls /\&quot;--\u003e\u003c&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:37&quot;},{&quot;id&quot;:85,&quot;name&quot;:&quot;\u003c!--#EXEC cmd=\&quot;dir \\\&quot;--\u003e&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:38&quot;},{&quot;id&quot;:86,&quot;name&quot;:&quot;\&quot;\u003e\u003c!--#EXEC cmd=\&quot;dir \\\&quot;--\u003e\u003c&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:38&quot;},{&quot;id&quot;:91,&quot;name&quot;:&quot;0W45pz4p&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:44&quot;},{&quot;id&quot;:92,&quot;name&quot;:&quot;\u003cscrIpt\u003ealert(1);\u003c/scRipt\u003e&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:45&quot;},{&quot;id&quot;:93,&quot;name&quot;:&quot;\u003cimg src=x onerror=prompt()\u003e&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:45&quot;},{&quot;id&quot;:94,&quot;name&quot;:&quot;＜img src=x onerror=prompt()＞&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:45&quot;},{&quot;id&quot;:95,&quot;name&quot;:&quot;\u003cimg src=x onerror=console.log(1);\u003e&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:46&quot;},{&quot;id&quot;:96,&quot;name&quot;:&quot;＜img src=x onerror=console.log(1);＞&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:46&quot;},{&quot;id&quot;:97,&quot;name&quot;:&quot;\u003cb onMouseOver=alert(1);\u003etest\u003c/b\u003e&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:47&quot;},{&quot;id&quot;:98,&quot;name&quot;:&quot;\u003csvg onload=alert(1)\u003e&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:48&quot;},{&quot;id&quot;:99,&quot;name&quot;:&quot;＜svg onload=alert(1)＞&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:48&quot;},{&quot;id&quot;:100,&quot;name&quot;:&quot;%3CscrIpt%3Ealert%281%29%3B%3C%2FscRipt%3E&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:49&quot;},{&quot;id&quot;:105,&quot;name&quot;:&quot;zApPX5sS&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:59&quot;},{&quot;id&quot;:109,&quot;name&quot;:&quot;\u003cscript\u003ealert(1);\u003c/script\u003e&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:58:02&quot;},{&quot;id&quot;:111,&quot;name&quot;:&quot;&#39;&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:58:03&quot;},{&quot;id&quot;:112,&quot;name&quot;:&quot;xburguer&#39;&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:58:03&quot;},{&quot;id&quot;:113,&quot;name&quot;:&quot;\&quot;&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:58:04&quot;},{&quot;id&quot;:114,&quot;name&quot;:&quot;xburguer\&quot;&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:58:04&quot;},{&quot;id&quot;:115,&quot;name&quot;:&quot;;&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:58:04&quot;},{&quot;id&quot;:116,&quot;name&quot;:&quot;xburguer;&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:58:05&quot;},{&quot;id&quot;:117,&quot;name&quot;:&quot;&#39;(&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:58:05&quot;},{&quot;id&quot;:118,&quot;name&quot;:&quot;xburguer&#39;(&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:58:05&quot;},{&quot;id&quot;:121,&quot;name&quot;:&quot;xburguer AND 1=1 -- &quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:58:06&quot;},{&quot;id&quot;:122,&quot;name&quot;:&quot;xburguer&#39; AND &#39;1&#39;=&#39;1&#39; -- &quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:58:06&quot;},{&quot;id&quot;:123,&quot;name&quot;:&quot;xburguer\&quot; AND \&quot;1\&quot;=\&quot;1\&quot; -- &quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:58:07&quot;},{&quot;id&quot;:124,&quot;name&quot;:&quot;xburguer AND 1=1&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:58:07&quot;},{&quot;id&quot;:125,&quot;name&quot;:&quot;xburguer&#39; AND &#39;1&#39;=&#39;1&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:58:07&quot;},{&quot;id&quot;:126,&quot;name&quot;:&quot;xburguer\&quot; AND \&quot;1\&quot;=\&quot;1&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:58:07&quot;},{&quot;id&quot;:127,&quot;name&quot;:&quot;xburguer UNION ALL select NULL -- &quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:58:08&quot;},{&quot;id&quot;:128,&quot;name&quot;:&quot;xburguer&#39; UNION ALL select NULL -- &quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:58:08&quot;}]</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>categoryId</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Attack</th>
+		<td><pre><code>1 AND 1=1 -- </code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Do not trust client side input, even if there is client side validation in place.</p>
+
+<p>In general, type check all data on the server side.</p>
+
+<p>If the application uses JDBC, use PreparedStatement or CallableStatement, with parameters passed by &#39;?&#39;</p>
+
+<p>If the application uses ASP, use ADO Command Objects with strong type checking and parameterized queries.</p>
+
+<p>If database Stored Procedures can be used, use them.</p>
+
+<p>Do *not* concatenate strings into queries in the stored procedure, or use &#39;exec&#39;, &#39;exec immediate&#39;, or equivalent functionality!</p>
+
+<p>Do not create dynamic SQL queries using simple string concatenation.</p>
+
+<p>Escape all data received from the client.</p>
+
+<p>Apply an &#39;allow list&#39; of allowed characters, or a &#39;deny list&#39; of disallowed characters in user input.</p>
+
+<p>Apply the principle of least privilege by using the least privileged database user possible.</p>
+
+<p>In particular, avoid using the &#39;sa&#39; or &#39;db-owner&#39; database users. This does not eliminate SQL injection, but minimizes its impact.</p>
+
+<p>Grant the minimum database access that is necessary for the application.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-1">Injeção SQL - SQLite</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://a6945c02e6bf44ba0b2f32721ea971bb-1914662718.us-east-1.elb.amazonaws.com/products?categoryId=1</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A1_2017-Injection.html">OWASP_2017_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A03_2021-Injection/">OWASP_2021_A03</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/89.html">CWE-89</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/07-Input_Validation_Testing/05-Testing_for_SQL_Injection">WSTG-v42-INPV-05</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>SQL injection may be possible.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>The query time is controllable using parameter value [case randomblob(10000000) when not null then 1 else 1 end ], which caused the request to take [696] milliseconds, parameter value [case randomblob(100000000) when not null then 1 else 1 end ], which caused the request to take [1.045] milliseconds, when the original unmodified query with value [1] took [998] milliseconds.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (394 bytes)</summary>
+				
+				<pre><code>GET http://a6945c02e6bf44ba0b2f32721ea971bb-1914662718.us-east-1.elb.amazonaws.com/products?categoryId=case+randomblob%2810000000%29+when+not+null+then+1+else+1+end+ HTTP/1.1
+host: a6945c02e6bf44ba0b2f32721ea971bb-1914662718.us-east-1.elb.amazonaws.com
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (126 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+Date: Mon, 09 Sep 2024 22:59:48 GMT
+content-length: 18891
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (18891 bytes)</summary>
+				
+				<pre><code>[{&quot;id&quot;:1,&quot;name&quot;:&quot;Água&quot;,&quot;price&quot;:2.5,&quot;description&quot;:&quot;Água Mineral 500ml&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 02:47:15&quot;},{&quot;id&quot;:2,&quot;name&quot;:&quot;Água2&quot;,&quot;price&quot;:2.5,&quot;description&quot;:&quot;Água Mineral 500ml&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 02:47:19&quot;},{&quot;id&quot;:3,&quot;name&quot;:&quot;Água3&quot;,&quot;price&quot;:2.5,&quot;description&quot;:&quot;Água Mineral 500ml&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 02:47:22&quot;},{&quot;id&quot;:4,&quot;name&quot;:&quot;Água4&quot;,&quot;price&quot;:2.5,&quot;description&quot;:&quot;Água Mineral 500ml&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 02:47:25&quot;},{&quot;id&quot;:5,&quot;name&quot;:&quot;Água5&quot;,&quot;price&quot;:2.5,&quot;description&quot;:&quot;Água Mineral 500ml&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 02:47:28&quot;},{&quot;id&quot;:6,&quot;name&quot;:&quot;Água6&quot;,&quot;price&quot;:2.5,&quot;description&quot;:&quot;Água Mineral 500ml&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 02:47:32&quot;},{&quot;id&quot;:7,&quot;name&quot;:&quot;xburguer&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:54:07&quot;},{&quot;id&quot;:9,&quot;name&quot;:&quot;c:/Windows/system.ini&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:56:28&quot;},{&quot;id&quot;:10,&quot;name&quot;:&quot;../../../../../../../../../../../../../../../../Windows/system.ini&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:56:28&quot;},{&quot;id&quot;:11,&quot;name&quot;:&quot;c:\\Windows\\system.ini&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:56:28&quot;},{&quot;id&quot;:12,&quot;name&quot;:&quot;..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\Windows\\system.ini&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:56:28&quot;},{&quot;id&quot;:13,&quot;name&quot;:&quot;/etc/passwd&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:56:29&quot;},{&quot;id&quot;:14,&quot;name&quot;:&quot;../../../../../../../../../../../../../../../../etc/passwd&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:56:29&quot;},{&quot;id&quot;:15,&quot;name&quot;:&quot;/&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:56:30&quot;},{&quot;id&quot;:16,&quot;name&quot;:&quot;../../../../../../../../../../../../../../../../&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:56:30&quot;},{&quot;id&quot;:17,&quot;name&quot;:&quot;c:/&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:56:31&quot;},{&quot;id&quot;:18,&quot;name&quot;:&quot;c:\\&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:56:32&quot;},{&quot;id&quot;:19,&quot;name&quot;:&quot;WEB-INF/web.xml&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:56:33&quot;},{&quot;id&quot;:20,&quot;name&quot;:&quot;WEB-INF\\web.xml&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:56:33&quot;},{&quot;id&quot;:21,&quot;name&quot;:&quot;/WEB-INF/web.xml&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:56:33&quot;},{&quot;id&quot;:22,&quot;name&quot;:&quot;\\WEB-INF\\web.xml&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:56:35&quot;},{&quot;id&quot;:23,&quot;name&quot;:&quot;thishouldnotexistandhopefullyitwillnot&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:56:35&quot;},{&quot;id&quot;:24,&quot;name&quot;:&quot;products&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:56:35&quot;},{&quot;id&quot;:25,&quot;name&quot;:&quot;/products&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:56:36&quot;},{&quot;id&quot;:26,&quot;name&quot;:&quot;\\products&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:56:36&quot;},{&quot;id&quot;:170,&quot;name&quot;:&quot;xburguer\&quot; and 0 in (select sleep(15) ) -- &quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:58:47&quot;},{&quot;id&quot;:171,&quot;name&quot;:&quot;xburguer where 0 in (select sleep(15) ) -- &quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:58:47&quot;},{&quot;id&quot;:172,&quot;name&quot;:&quot;xburguer&#39; where 0 in (select sleep(15) ) -- &quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:58:48&quot;},{&quot;id&quot;:173,&quot;name&quot;:&quot;xburguer\&quot; where 0 in (select sleep(15) ) -- &quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:58:48&quot;},{&quot;id&quot;:174,&quot;name&quot;:&quot;xburguer or 0 in (select sleep(15) ) -- &quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:58:48&quot;},{&quot;id&quot;:190,&quot;name&quot;:&quot;xburguer / \&quot;java.lang.Thread.sleep\&quot;(15000) &quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:59:04&quot;},{&quot;id&quot;:193,&quot;name&quot;:&quot;xburguer and exists ( select \&quot;java.lang.Thread.sleep\&quot;(15000) from INFORMATION_SCHEMA.SYSTEM_COLUMNS where TABLE_NAME = &#39;SYSTEM_COLUMNS&#39; and COLUMN_NAME = &#39;TABLE_NAME&#39;) -- &quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:59:06&quot;},{&quot;id&quot;:194,&quot;name&quot;:&quot;xburguer&#39; and exists ( select \&quot;java.lang.Thread.sleep\&quot;(15000) from INFORMATION_SCHEMA.SYSTEM_COLUMNS where TABLE_NAME = &#39;SYSTEM_COLUMNS&#39; and COLUMN_NAME = &#39;TABLE_NAME&#39;) -- &quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:59:07&quot;},{&quot;id&quot;:219,&quot;name&quot;:&quot;case when cast(pg_sleep(15.0) as varchar) \u003e &#39;&#39; then 0 else 1 end&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:59:33&quot;},{&quot;id&quot;:222,&quot;name&quot;:&quot;\&quot;case when cast(pg_sleep(15.0) as varchar) \u003e &#39;&#39; then 0 else 1 end -- &quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:59:34&quot;},{&quot;id&quot;:223,&quot;name&quot;:&quot;xburguer / case when cast(pg_sleep(15.0) as varchar) \u003e &#39;&#39; then 0 else 1 end &quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:59:34&quot;},{&quot;id&quot;:45,&quot;name&quot;:&quot;http://www.google.com/&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:00&quot;},{&quot;id&quot;:46,&quot;name&quot;:&quot;http://www.google.com:80/&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:01&quot;},{&quot;id&quot;:47,&quot;name&quot;:&quot;http://www.google.com&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:01&quot;},{&quot;id&quot;:48,&quot;name&quot;:&quot;http://www.google.com/search?q=ZAP&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:02&quot;},{&quot;id&quot;:49,&quot;name&quot;:&quot;http://www.google.com:80/search?q=ZAP&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:02&quot;},{&quot;id&quot;:50,&quot;name&quot;:&quot;www.google.com/&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:02&quot;},{&quot;id&quot;:51,&quot;name&quot;:&quot;www.google.com:80/&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:02&quot;},{&quot;id&quot;:52,&quot;name&quot;:&quot;www.google.com&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:03&quot;},{&quot;id&quot;:53,&quot;name&quot;:&quot;www.google.com/search?q=ZAP&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:03&quot;},{&quot;id&quot;:54,&quot;name&quot;:&quot;www.google.com:80/search?q=ZAP&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:03&quot;},{&quot;id&quot;:236,&quot;name&quot;:&quot;case randomblob(100000000) when not null then 1 else 1 end &quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:59:45&quot;},{&quot;id&quot;:237,&quot;name&quot;:&quot;case randomblob(1000000000) when not null then 1 else 1 end &quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:59:45&quot;},{&quot;id&quot;:238,&quot;name&quot;:&quot;gub20pkqj1ntrts81vq6hs66fk6yi6b12do7c3q6y8pf7o4m6n6kh7z983f9&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:59:45&quot;},{&quot;id&quot;:65,&quot;name&quot;:&quot;3505551547495921286.owasp.org&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:23&quot;},{&quot;id&quot;:66,&quot;name&quot;:&quot;http://3505551547495921286.owasp.org&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:23&quot;},{&quot;id&quot;:67,&quot;name&quot;:&quot;https://3505551547495921286.owasp.org&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:23&quot;},{&quot;id&quot;:68,&quot;name&quot;:&quot;https://3505551547495921286%2eowasp%2eorg&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:24&quot;},{&quot;id&quot;:69,&quot;name&quot;:&quot;5;URL=&#39;https://3505551547495921286.owasp.org&#39;&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:24&quot;},{&quot;id&quot;:70,&quot;name&quot;:&quot;URL=&#39;http://3505551547495921286.owasp.org&#39;&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:24&quot;},{&quot;id&quot;:71,&quot;name&quot;:&quot;http://\\3505551547495921286.owasp.org&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:24&quot;},{&quot;id&quot;:72,&quot;name&quot;:&quot;https://\\3505551547495921286.owasp.org&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:24&quot;},{&quot;id&quot;:73,&quot;name&quot;:&quot;//3505551547495921286.owasp.org&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:25&quot;},{&quot;id&quot;:191,&quot;name&quot;:&quot;xburguer&#39; / \&quot;java.lang.Thread.sleep\&quot;(15000) / &#39;&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:59:05&quot;},{&quot;id&quot;:192,&quot;name&quot;:&quot;xburguer\&quot; / \&quot;java.lang.Thread.sleep\&quot;(15000) / \&quot;&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:59:05&quot;},{&quot;id&quot;:83,&quot;name&quot;:&quot;\u003c!--#EXEC cmd=\&quot;ls /\&quot;--\u003e&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:37&quot;},{&quot;id&quot;:84,&quot;name&quot;:&quot;\&quot;\u003e\u003c!--#EXEC cmd=\&quot;ls /\&quot;--\u003e\u003c&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:37&quot;},{&quot;id&quot;:85,&quot;name&quot;:&quot;\u003c!--#EXEC cmd=\&quot;dir \\\&quot;--\u003e&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:38&quot;},{&quot;id&quot;:86,&quot;name&quot;:&quot;\&quot;\u003e\u003c!--#EXEC cmd=\&quot;dir \\\&quot;--\u003e\u003c&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:38&quot;},{&quot;id&quot;:208,&quot;name&quot;:&quot;xburguer&#39; / (SELECT  UTL_INADDR.get_host_name(&#39;10.0.0.1&#39;) from dual union SELECT  UTL_INADDR.get_host_name(&#39;10.0.0.2&#39;) from dual union SELECT  UTL_INADDR.get_host_name(&#39;10.0.0.3&#39;) from dual union SELECT  UTL_INADDR.get_host_name(&#39;10.0.0.4&#39;) from dual union SELECT  UTL_INADDR.get_host_name(&#39;10.0.0.5&#39;) from dual) / &#39;&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:59:22&quot;},{&quot;id&quot;:209,&quot;name&quot;:&quot;xburguer\&quot; / (SELECT  UTL_INADDR.get_host_name(&#39;10.0.0.1&#39;) from dual union SELECT  UTL_INADDR.get_host_name(&#39;10.0.0.2&#39;) from dual union SELECT  UTL_INADDR.get_host_name(&#39;10.0.0.3&#39;) from dual union SELECT  UTL_INADDR.get_host_name(&#39;10.0.0.4&#39;) from dual union SELECT  UTL_INADDR.get_host_name(&#39;10.0.0.5&#39;) from dual) / \&quot;&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:59:22&quot;},{&quot;id&quot;:210,&quot;name&quot;:&quot;xburguer and exists (SELECT  UTL_INADDR.get_host_name(&#39;10.0.0.1&#39;) from dual union SELECT  UTL_INADDR.get_host_name(&#39;10.0.0.2&#39;) from dual union SELECT  UTL_INADDR.get_host_name(&#39;10.0.0.3&#39;) from dual union SELECT  UTL_INADDR.get_host_name(&#39;10.0.0.4&#39;) from dual union SELECT  UTL_INADDR.get_host_name(&#39;10.0.0.5&#39;) from dual) -- &quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:59:22&quot;},{&quot;id&quot;:220,&quot;name&quot;:&quot;case when cast(pg_sleep(15.0) as varchar) \u003e &#39;&#39; then 0 else 1 end -- &quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:59:33&quot;},{&quot;id&quot;:221,&quot;name&quot;:&quot;&#39;case when cast(pg_sleep(15.0) as varchar) \u003e &#39;&#39; then 0 else 1 end -- &quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:59:34&quot;},{&quot;id&quot;:91,&quot;name&quot;:&quot;0W45pz4p&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:44&quot;},{&quot;id&quot;:92,&quot;name&quot;:&quot;\u003cscrIpt\u003ealert(1);\u003c/scRipt\u003e&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:45&quot;},{&quot;id&quot;:165,&quot;name&quot;:&quot;xburguer / sleep(15) &quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:58:46&quot;},{&quot;id&quot;:167,&quot;name&quot;:&quot;xburguer\&quot; / sleep(15) / \&quot;&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:58:46&quot;},{&quot;id&quot;:168,&quot;name&quot;:&quot;xburguer and 0 in (select sleep(15) ) -- &quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:58:47&quot;},{&quot;id&quot;:207,&quot;name&quot;:&quot;xburguer / (SELECT  UTL_INADDR.get_host_name(&#39;10.0.0.1&#39;) from dual union SELECT  UTL_INADDR.get_host_name(&#39;10.0.0.2&#39;) from dual union SELECT  UTL_INADDR.get_host_name(&#39;10.0.0.3&#39;) from dual union SELECT  UTL_INADDR.get_host_name(&#39;10.0.0.4&#39;) from dual union SELECT  UTL_INADDR.get_host_name(&#39;10.0.0.5&#39;) from dual) &quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:59:22&quot;},{&quot;id&quot;:233,&quot;name&quot;:&quot;case randomblob(1000000) when not null then 1 else 1 end &quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:59:44&quot;},{&quot;id&quot;:93,&quot;name&quot;:&quot;\u003cimg src=x onerror=prompt()\u003e&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:45&quot;},{&quot;id&quot;:94,&quot;name&quot;:&quot;＜img src=x onerror=prompt()＞&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:45&quot;},{&quot;id&quot;:95,&quot;name&quot;:&quot;\u003cimg src=x onerror=console.log(1);\u003e&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:46&quot;},{&quot;id&quot;:96,&quot;name&quot;:&quot;＜img src=x onerror=console.log(1);＞&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:46&quot;},{&quot;id&quot;:97,&quot;name&quot;:&quot;\u003cb onMouseOver=alert(1);\u003etest\u003c/b\u003e&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:47&quot;},{&quot;id&quot;:98,&quot;name&quot;:&quot;\u003csvg onload=alert(1)\u003e&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:48&quot;},{&quot;id&quot;:99,&quot;name&quot;:&quot;＜svg onload=alert(1)＞&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:48&quot;},{&quot;id&quot;:100,&quot;name&quot;:&quot;%3CscrIpt%3Ealert%281%29%3B%3C%2FscRipt%3E&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:49&quot;},{&quot;id&quot;:166,&quot;name&quot;:&quot;xburguer&#39; / sleep(15) / &#39;&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:58:46&quot;},{&quot;id&quot;:169,&quot;name&quot;:&quot;xburguer&#39; and 0 in (select sleep(15) ) -- &quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:58:47&quot;},{&quot;id&quot;:105,&quot;name&quot;:&quot;zApPX5sS&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:57:59&quot;},{&quot;id&quot;:109,&quot;name&quot;:&quot;\u003cscript\u003ealert(1);\u003c/script\u003e&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:58:02&quot;},{&quot;id&quot;:111,&quot;name&quot;:&quot;&#39;&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:58:03&quot;},{&quot;id&quot;:112,&quot;name&quot;:&quot;xburguer&#39;&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:58:03&quot;},{&quot;id&quot;:113,&quot;name&quot;:&quot;\&quot;&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:58:04&quot;},{&quot;id&quot;:114,&quot;name&quot;:&quot;xburguer\&quot;&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:58:04&quot;},{&quot;id&quot;:115,&quot;name&quot;:&quot;;&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:58:04&quot;},{&quot;id&quot;:116,&quot;name&quot;:&quot;xburguer;&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:58:05&quot;},{&quot;id&quot;:117,&quot;name&quot;:&quot;&#39;(&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:58:05&quot;},{&quot;id&quot;:118,&quot;name&quot;:&quot;xburguer&#39;(&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:58:05&quot;},{&quot;id&quot;:121,&quot;name&quot;:&quot;xburguer AND 1=1 -- &quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:58:06&quot;},{&quot;id&quot;:122,&quot;name&quot;:&quot;xburguer&#39; AND &#39;1&#39;=&#39;1&#39; -- &quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:58:06&quot;},{&quot;id&quot;:123,&quot;name&quot;:&quot;xburguer\&quot; AND \&quot;1\&quot;=\&quot;1\&quot; -- &quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:58:07&quot;},{&quot;id&quot;:124,&quot;name&quot;:&quot;xburguer AND 1=1&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:58:07&quot;},{&quot;id&quot;:125,&quot;name&quot;:&quot;xburguer&#39; AND &#39;1&#39;=&#39;1&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:58:07&quot;},{&quot;id&quot;:126,&quot;name&quot;:&quot;xburguer\&quot; AND \&quot;1\&quot;=\&quot;1&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:58:07&quot;},{&quot;id&quot;:127,&quot;name&quot;:&quot;xburguer UNION ALL select NULL -- &quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:58:08&quot;},{&quot;id&quot;:128,&quot;name&quot;:&quot;xburguer&#39; UNION ALL select NULL -- &quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:58:08&quot;},{&quot;id&quot;:129,&quot;name&quot;:&quot;xburguer\&quot; UNION ALL select NULL -- &quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:58:08&quot;},{&quot;id&quot;:130,&quot;name&quot;:&quot;xburguer) UNION ALL select NULL -- &quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:58:09&quot;},{&quot;id&quot;:131,&quot;name&quot;:&quot;xburguer&#39;) UNION ALL select NULL -- &quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:58:09&quot;},{&quot;id&quot;:185,&quot;name&quot;:&quot;; select \&quot;java.lang.Thread.sleep\&quot;(15000) from INFORMATION_SCHEMA.SYSTEM_COLUMNS where TABLE_NAME = &#39;SYSTEM_COLUMNS&#39; and COLUMN_NAME = &#39;TABLE_NAME&#39; -- &quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:59:03&quot;},{&quot;id&quot;:186,&quot;name&quot;:&quot;&#39;; select \&quot;java.lang.Thread.sleep\&quot;(15000) from INFORMATION_SCHEMA.SYSTEM_COLUMNS where TABLE_NAME = &#39;SYSTEM_COLUMNS&#39; and COLUMN_NAME = &#39;TABLE_NAME&#39; -- &quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:59:03&quot;},{&quot;id&quot;:187,&quot;name&quot;:&quot;\&quot;; select \&quot;java.lang.Thread.sleep\&quot;(15000) from INFORMATION_SCHEMA.SYSTEM_COLUMNS where TABLE_NAME = &#39;SYSTEM_COLUMNS&#39; and COLUMN_NAME = &#39;TABLE_NAME&#39; -- &quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:59:04&quot;},{&quot;id&quot;:188,&quot;name&quot;:&quot;); select \&quot;java.lang.Thread.sleep\&quot;(15000) from INFORMATION_SCHEMA.SYSTEM_COLUMNS where TABLE_NAME = &#39;SYSTEM_COLUMNS&#39; and COLUMN_NAME = &#39;TABLE_NAME&#39; -- &quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:59:04&quot;},{&quot;id&quot;:189,&quot;name&quot;:&quot;\&quot;java.lang.Thread.sleep\&quot;(15000)&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:59:04&quot;},{&quot;id&quot;:206,&quot;name&quot;:&quot;(SELECT  UTL_INADDR.get_host_name(&#39;10.0.0.1&#39;) from dual union SELECT  UTL_INADDR.get_host_name(&#39;10.0.0.2&#39;) from dual union SELECT  UTL_INADDR.get_host_name(&#39;10.0.0.3&#39;) from dual union SELECT  UTL_INADDR.get_host_name(&#39;10.0.0.4&#39;) from dual union SELECT  UTL_INADDR.get_host_name(&#39;10.0.0.5&#39;) from dual)&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:59:21&quot;},{&quot;id&quot;:231,&quot;name&quot;:&quot;case randomblob(100000) when not null then 1 else 1 end &quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:59:44&quot;},{&quot;id&quot;:232,&quot;name&quot;:&quot;9o134g07j09zacxiksv8a47a6at8996fwtpzx4y5hnpoaz719znm1bxw&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:59:44&quot;},{&quot;id&quot;:234,&quot;name&quot;:&quot;case randomblob(10000000) when not null then 1 else 1 end &quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:59:45&quot;},{&quot;id&quot;:235,&quot;name&quot;:&quot;yvqingugd2v66u7dv7vl6241o45yyrs52ykfh7eo47eglnn36i2cdupph7&quot;,&quot;price&quot;:1,&quot;description&quot;:&quot;burguer grande&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 22:59:45&quot;}]</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>categoryId</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Attack</th>
+		<td><pre><code>case randomblob(10000000) when not null then 1 else 1 end </code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>The query time is controllable using parameter value [case randomblob(10000000) when not null then 1 else 1 end ], which caused the request to take [696] milliseconds, parameter value [case randomblob(100000000) when not null then 1 else 1 end ], which caused the request to take [1.045] milliseconds, when the original unmodified query with value [1] took [998] milliseconds.</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Do not trust client side input, even if there is client side validation in place.</p>
+
+<p>In general, type check all data on the server side.</p>
+
+<p>If the application uses JDBC, use PreparedStatement or CallableStatement, with parameters passed by &#39;?&#39;</p>
+
+<p>If the application uses ASP, use ADO Command Objects with strong type checking and parameterized queries.</p>
+
+<p>If database Stored Procedures can be used, use them.</p>
+
+<p>Do *not* concatenate strings into queries in the stored procedure, or use &#39;exec&#39;, &#39;exec immediate&#39;, or equivalent functionality!</p>
+
+<p>Do not create dynamic SQL queries using simple string concatenation.</p>
+
+<p>Escape all data received from the client.</p>
+
+<p>Apply an &#39;allow list&#39; of allowed characters, or a &#39;deny list&#39; of disallowed characters in user input.</p>
+
+<p>Apply the principle of least privilege by using the least privileged database user possible.</p>
+
+<p>In particular, avoid using the &#39;sa&#39; or &#39;db-owner&#39; database users. This does not eliminate SQL injection, but minimizes its impact.</p>
+
+<p>Grant the minimum database access that is necessary for the application.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+						
+						
+					</ol>
+				</li>
+				
+				
+				  
+				 
+				 
+				
+				
+				
+				
+				<li id="alerts--risk-1-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Baixo</span>, <span>Confidence</span>=<span
+							class="confidence-level">Médio</span> <span>(2)</span>
+					</h3>
+					<ol>
+						
+						
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://a458e5c9044e04963b60ed9128ce81b4-1515135965.us-east-1.elb.amazonaws.com</span> <span>(2)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-2">Application Error Disclosure</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">POST http://a458e5c9044e04963b60ed9128ce81b4-1515135965.us-east-1.elb.amazonaws.com/customers</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/08-Testing_for_Error_Handling/02-Testing_for_Stack_Traces">WSTG-v42-ERRH-02</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/08-Testing_for_Error_Handling/01-Testing_For_Improper_Error_Handling">WSTG-v42-ERRH-01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/200.html">CWE-200</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>This page contains an error/warning message that may disclose sensitive information like the location of the file that produced the unhandled exception. This information can be used to launch further attacks against the web application. The alert could be a false positive if the error message is found inside a documentation page.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (374 bytes)</summary>
+				
+				<pre><code>POST http://a458e5c9044e04963b60ed9128ce81b4-1515135965.us-east-1.elb.amazonaws.com/customers HTTP/1.1
+host: a458e5c9044e04963b60ed9128ce81b4-1515135965.us-east-1.elb.amazonaws.com
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0
+pragma: no-cache
+cache-control: no-cache
+content-type: application/json
+content-length: 75
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (75 bytes)</summary>
+				
+				<pre><code>{
+  &quot;name&quot;: &quot;teste&quot;,
+  &quot;cpf&quot;: &quot;73065867001&quot;,
+  &quot;email&quot;: &quot;teste@teste.com&quot;
+}</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (142 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 500 Internal Server Error
+Content-Type: application/json; charset=utf-8
+Date: Mon, 09 Sep 2024 22:55:55 GMT
+Content-Length: 41
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (41 bytes)</summary>
+				
+				<pre><code>{&quot;error&quot;:&quot;cliente já existe no sistema&quot;}</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>HTTP/1.1 500 Internal Server Error</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Review the source code of this page. Implement custom error pages. Consider implementing a mechanism to provide a unique error reference/identifier to the client (browser) while logging the details on the server side and not exposing them to the user.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-3">X-Content-Type-Options Header Missing</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://a458e5c9044e04963b60ed9128ce81b4-1515135965.us-east-1.elb.amazonaws.com/customers</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/693.html">CWE-693</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to &#39;nosniff&#39;. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.</p>
+
+<p>At &quot;High&quot; threshold this scan rule will not alert on client or server error responses.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (321 bytes)</summary>
+				
+				<pre><code>GET http://a458e5c9044e04963b60ed9128ce81b4-1515135965.us-east-1.elb.amazonaws.com/customers HTTP/1.1
+host: a458e5c9044e04963b60ed9128ce81b4-1515135965.us-east-1.elb.amazonaws.com
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (124 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+Date: Mon, 09 Sep 2024 22:55:55 GMT
+Content-Length: 147
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (147 bytes)</summary>
+				
+				<pre><code>&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXN0b21lcklkIjoiIiwiaXNzIjoidGVzdGUiLCJleHAiOjE3MjYwMDg5NTV9.u2rDv_7OAWg00924HidNB5mLLyfACg6UBsvrUY49CW0&quot;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>x-content-type-options</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to &#39;nosniff&#39; for all web pages.</p>
+
+<p>If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				
+				  
+				 
+				
+				
+				
+				
+				<li id="alerts--risk-0-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Informativo</span>, <span>Confidence</span>=<span
+							class="confidence-level">Médio</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://a6945c02e6bf44ba0b2f32721ea971bb-1914662718.us-east-1.elb.amazonaws.com</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-4">User Agent Fuzzer</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">POST http://a6945c02e6bf44ba0b2f32721ea971bb-1914662718.us-east-1.elb.amazonaws.com/orders</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Check for differences in response based on fuzzed User Agent (eg. mobile sites, access as a Search Engine Crawler). Compares the response statuscode and the hashcode of the response body with the original response.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (342 bytes)</summary>
+				
+				<pre><code>POST http://a6945c02e6bf44ba0b2f32721ea971bb-1914662718.us-east-1.elb.amazonaws.com/orders HTTP/1.1
+host: a6945c02e6bf44ba0b2f32721ea971bb-1914662718.us-east-1.elb.amazonaws.com
+user-agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1)
+pragma: no-cache
+cache-control: no-cache
+content-type: application/json
+content-length: 295
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (295 bytes)</summary>
+				
+				<pre><code>{
+  &quot;customerId&quot;: 1,
+  &quot;products&quot;: [
+    {
+      &quot;id&quot;: 1,
+      &quot;quantity&quot;: 1,
+      &quot;observation&quot;: &quot;Com queijo&quot;
+    },
+    {
+      &quot;id&quot;: 1,
+      &quot;quantity&quot;: 3,
+      &quot;observation&quot;: &quot;Sem queijo&quot;
+    },
+    {
+      &quot;id&quot;: 1,
+      &quot;quantity&quot;: 5,
+      &quot;observation&quot;: &quot;Queijo cheddar&quot;
+    }
+  ]
+}
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (129 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 201 Created
+Content-Type: application/json; charset=utf-8
+Date: Mon, 09 Sep 2024 23:03:33 GMT
+Content-Length: 704
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (704 bytes)</summary>
+				
+				<pre><code>{&quot;id&quot;:&quot;66df7ec5a707ad8a6b47ce20&quot;,&quot;customer&quot;:0,&quot;products&quot;:[{&quot;product&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Água&quot;,&quot;price&quot;:2.5,&quot;description&quot;:&quot;Água Mineral 500ml&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 02:47:15&quot;},&quot;quantity&quot;:1,&quot;observation&quot;:&quot;Com queijo&quot;},{&quot;product&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Água&quot;,&quot;price&quot;:2.5,&quot;description&quot;:&quot;Água Mineral 500ml&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 02:47:15&quot;},&quot;quantity&quot;:3,&quot;observation&quot;:&quot;Sem queijo&quot;},{&quot;product&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Água&quot;,&quot;price&quot;:2.5,&quot;description&quot;:&quot;Água Mineral 500ml&quot;,&quot;categoryId&quot;:1,&quot;createdAt&quot;:&quot;2024-09-09 02:47:15&quot;},&quot;quantity&quot;:5,&quot;observation&quot;:&quot;Queijo cheddar&quot;}],&quot;status&quot;:&quot;created&quot;,&quot;paymentStatus&quot;:&quot;awaiting_payment&quot;,&quot;createdAt&quot;:&quot;2024-09-09 23:03:33&quot;,&quot;updatedAt&quot;:&quot;2024-09-09 23:03:33&quot;}</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>Cabeçalho do Agente de Usuário</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Attack</th>
+		<td><pre><code>Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1)</code></pre></td>
+	</tr>
+	
+	
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+						
+						
+					</ol>
+				</li>
+				
+				
+				  
+			</ol>
+		</section>
+
+		<section id="appendix" class="appendix">
+			<h2>Appendix</h2>
+
+			<section id="alert-types" class="alert-types">
+				<h3>Alert types</h3>
+				<p class="alert-types-intro">This section contains additional information on the types of alerts in the report.</p>
+				<ol>
+					<li
+						id="alert-type-0">
+						<h4>Injeção SQL</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by an active scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/-1/">plugin ID: -1</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/89.html">89</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>19</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-1">
+						<h4>Injeção SQL - SQLite</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by an active scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/40024/">Injeção SQL - SQLite</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/89.html">89</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>19</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-2">
+						<h4>Application Error Disclosure</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/90022/">Application Error Disclosure</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/200.html">200</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							
+						</table>
+					</li>
+					<li
+						id="alert-type-3">
+						<h4>X-Content-Type-Options Header Missing</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10021/">X-Content-Type-Options Header Missing</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)">https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)</a></li>
+										<li><a
+											href="https://owasp.org/www-community/Security_Headers">https://owasp.org/www-community/Security_Headers</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-4">
+						<h4>User Agent Fuzzer</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by an active scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10104/">User Agent Fuzzer</a>)
+									</span>   
+								</td>
+							</tr>
+							
+							
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://owasp.org/wstg">https://owasp.org/wstg</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+				</ol>
+			</section>
+		</section>
+		 
+	</main>
+</body>
+</html>
+
+
+
