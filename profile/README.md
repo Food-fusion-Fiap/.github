@@ -61,10 +61,14 @@ k6 run --duration 1m tests/stress.js
 ```
 
 ## Documentação da API
-Ao importar a documentação presente em `docs/tech-challenge.json` no Postman, terão valores de exemplos editáveis.
+Ao importar a documentação presente em `docs/tech-challenge.json` de cada repositório, no Postman, terão valores de exemplos editáveis.
 
 ## Documentação do problema
 Para visualizar e editar o storytelling da aplicação, acesse [Egon.io](https://egon.io/app-v1/) e importe os arquivos `.dst` localizados em `docs/domain_storytelling`.
+
+#### Relatório RIPD do sistema
+
+É possível acessar o relatório RIPD atrávés do [link](docs/RIPD.docx).
 
 #### Arquitetura em Kubernetes
 ![Arquitetura em Kubernetes](docs/architecture/architecture.png)
