@@ -84,7 +84,7 @@ Esta imagem ilustra a arquitetura do sistema. Como se trata de um projeto pequen
 
 ![Fluxograma dos microsserviços](docs/fluxogram.png)
 
-Através da imagem podemos observar o comportamento entre os serviços, na parte de pagamento.
+Através da imagem podemos observar o comportamento entre os serviços durante a realização do pagamento de um pedido realizado pelo cliente.
 
 #### Pedido do Cliente
 
