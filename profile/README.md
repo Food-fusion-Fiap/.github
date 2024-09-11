@@ -80,11 +80,11 @@ Para visualizar e editar o storytelling da aplicação, acesse [Egon.io](https:/
 
 Esta imagem ilustra a arquitetura do sistema. Como se trata de um projeto pequeno, com apenas um evento, optou-se por adotar o padrão SAGA baseado em coreografia. Nesse modelo, o próprio serviço que inicia o evento – neste caso, o payment-service – é responsável por conduzir o fluxo. Escolhemos a  SAGA coreografada por sua agilidade em adaptar-se a mudanças nos requisitos de negócios e pela descentralização dos serviços, permitindo que cada um defina suas próprias regras de negócio. Além disso, a ausência de um componente central (orquestrador) elimina a dependência de um único ponto de falha, aumentando a resiliência do sistema.
 
-#### Fluxograma dos microsserviços
+#### Fluxograma da SAGA
 
-![Fluxograma dos microsserviços](docs/fluxogram.png)
+![Fluxograma da SAGA](docs/fluxogram.png)
 
-Através da imagem podemos observar o comportamento entre os serviços durante a realização do pagamento de um pedido realizado pelo cliente.
+Através da imagem podemos observar o comportamento da SAGA entre os serviços durante a realização do pagamento de um pedido realizado pelo cliente.
 
 #### Pedido do Cliente
 
