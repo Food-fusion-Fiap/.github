@@ -98,6 +98,10 @@ Esta imagem representa o processo de pedido do cliente usando o sistema de autoa
 
 Esta imagem representa o processo de preparo e entrega dos pedidos na cozinha da lanchonete. O sistema de autoatendimento de fast food transmite os pedidos automaticamente para a cozinha, após pagamento, onde são preparados e entregues aos clientes de forma eficiente e organizada.
 
+### Explicação por vídeo
+
+É possível ver pelo vídeo através do [link](https://youtu.be/SfEPL-rrXMs) o projeto rodando, inclusive com o padrão SAGA funcionando. Este projeto foi desenvolvido para gerenciar pedidos e pagamentos de um restaurante de forma eficiente e escalável. Explicando sobre o uso do padrão SAGA escolhido e sua justificativa, além de como a estrutura foi montada e como a comunicação está montada.
+
 ### Ordem de execução da API:
 
 - Iniciar a aplicação, conforme presente nessa documentação.
